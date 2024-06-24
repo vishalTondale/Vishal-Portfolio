@@ -6,6 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="A personal portfolio webpage" />
     <title>Personal Portfolio</title>
@@ -41,8 +42,9 @@
     <section id="welcome-section">
       <div>
         <h1>Hello<span>,</span></h1>
-        <h2 id="subheading">I'm <span>Vishal Tondale</span></h2>
-        <h3>Full Stack Web Developer</h3>
+        <h2 id="subheading">I am <span>Vishal Tondale</span></h2>
+        <h3><span id="element"></span></h3>
+        
       </div>
       <div>
         <img
@@ -244,6 +246,13 @@
             <p>Simple Registration Form using HTML CSS</p>
           </div>
         </div>
+
+
+      </div>
+      <div class="see-more-container">
+        <a href="projects.html">
+          <button class="see-more-button">See More Projects</button>
+        </a>
       </div>
     </section>
 
@@ -345,5 +354,12 @@
         by Vishal Tondale
       </p>
     </footer>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['<i>java developer.</i>','<i> Coder.</i>','<i>Full Stack Web Developer</i>.'],
+        typeSpeed: 100,
+      });
+    </script>
   </body>
 </html>
